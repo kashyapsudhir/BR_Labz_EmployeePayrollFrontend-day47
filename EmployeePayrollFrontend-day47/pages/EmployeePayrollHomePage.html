@@ -29,10 +29,57 @@
         <div class="emp-detail-text">
             Employee Details <div class="emp-count">10</div>
         </div>
-        <a href="../pages/EmployeePayrollHomePage.html" class="add-button">
+        <a href="../pages/EmployeePayrollform.html" class="add-button">
             <img src="../assets/icons/add-24px.svg" alt="">Add User
         </a>
     </div>  <!----header content-->
  </div>
+ <table id ="display" class="table">
+    <!--UC 3 – Display Employee Details in Tabular Format-->
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>StartDate</th>
+        <th>Actions</th>
+    </tr>
+    <tr>
+        <td><img class="profile" alt="loding..." 
+           src="../assets/E2.png">
+        </td>
+        <td>Sudhir</td>
+        <td>Male</td>
+        <td><div class="dept-label">Hr</div>
+           <div class="dept-label">Finance</div>
+       </td>
+       <td>3000000</td>
+       <td>1 Jan 2022</td>
+       <td>
+           <img id="1" onclick="remove(this)" alt="delete"
+           src="../assets/icons/delete-black-18dp.svg">
+           <img id="1" alt="edit" onclick="update(this)"
+           src="../assets/icons/create-black-18dp.svg">
+       </td>
+       <tr>
+        <td><img class="profile" alt="loding..." 
+           src="../assets/E3.png">
+        </td>
+        <td>Eliza</td>
+        <td>Female</td>
+        <td><div class="dept-label">Sales</div>
+           <div class="dept-label">Finance</div>
+       </td>
+       <td>4300000</td>
+       <td>1 Jan 2020</td>
+       <td>
+           <img id="2" onclick="remove(this)" alt="delete"
+           src="../assets/icons/delete-black-18dp.svg">
+           <img id="2" alt="edit" onclick="update(this)"
+           src="../assets/icons/create-black-18dp.svg">
+       </td>
+    </tr>
+</table>
 </body>
 </html>
